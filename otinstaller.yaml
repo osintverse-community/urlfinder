@@ -20,7 +20,7 @@ outputs:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/urlfinder@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/urlfinder@sha256:aefb076eaf04a5e4b4da85f766e1bd2bad061978164bba23151dfe5ab7cb9589
   platforms: [linux/amd64, linux/arm64]
   command: ["urlfinder", "-d", "{domain}", "-silent", "-j", "-duc", "-nc"]
   output_format: jsonl
